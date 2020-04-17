@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>简易画板</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="actions" class="actions">
+        <svg class="icon" id="eraser" aria-hidden="true">
+            <use xlink:href="#icon-eraser-fill"></use>
+        </svg>
+        <svg class="active icon" id="pen" aria-hidden="true">
+            <use xlink:href="#icon-pen1"></use>
+        </svg>
+        <svg class="icon" id="clear" aria-hidden="true">
+            <use xlink:href="#icon-clear"></use>
+        </svg>
+        <svg class="icon" id="save" aria-hidden="true">
+            <use xlink:href="#icon-Save"></use>
+        </svg>
+        <ol class="colors">
+            <li id="black" class="active black"></li>
+            <li id="red" class="red"></li>
+            <li id="blue" class="blue"></li>
+        </ol>
+        <ol class="sizes">
+            <li id="thin"></li>
+            <li id="thick"></li>
+        </ol>
+    </div>
+    <script src="//at.alicdn.com/t/font_1426641_lcf3nwp4kcm.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
